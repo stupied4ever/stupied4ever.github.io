@@ -1,0 +1,49 @@
+---
+# # # # # # # # # #
+#  K i k o f r i  #
+# # # # # # # # # #
+
+# Basic
+name: "Rafael Almeida"
+description: "Blog onde escrevo sobre minhas reflexões"
+
+# URL
+url: " "
+#baseurl: ""
+permalink: /:year/:month/:day/:title.html
+
+# Markdown
+markdown: kramdown
+
+# Navigation
+nav:
+ - name: "Categorias"
+   href: "/tags"
+
+# Sass
+sass:
+ style: :compressed
+
+# Excerpt
+excerpt_separator: <!-ex->
+
+#Gems
+plugins: [jekyll-paginate, jekyll-seo-tag]
+paginate: 10
+paginate_path: "/page:num/"
+
+# Scopes
+defaults:
+ -
+  scope:
+   path: ""
+   type: "pages"
+  values:
+   layout: "page"
+ -
+  scope:
+   path: ""
+   type: "posts"
+  values:
+   layout: "post"
+---
